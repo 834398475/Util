@@ -72,10 +72,6 @@
         /// </summary>
         public const string BindUploadUrl = "bind-upload-url";
         /// <summary>
-        /// 保存Url
-        /// </summary>
-        public const string BindSaveUrl = "bind-save-url";
-        /// <summary>
         /// 类型
         /// </summary>
         public const string BindType = "bind-type";

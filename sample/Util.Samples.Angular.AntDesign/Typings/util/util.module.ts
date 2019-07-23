@@ -54,9 +54,8 @@ import { TreeSelect } from "./zorro/tree-select-wrapper.component";
 import { TreeTable } from "./zorro/tree-table-wrapper.component";
 
 //Util指令
-import { EditTableDirective } from "./zorro/edit-table.directive";
+import { EditTableDirective } from "./zorro/edit-table.directive"
 import { EditRowDirective } from "./zorro/edit-row.directive";
-import { EditControlDirective } from "./zorro/edit-control.directive";
 
 //导入模块集合
 const importModules = [
@@ -76,7 +75,7 @@ const components = [
 
 //指令集合
 const directives = [
-    EditTableDirective, EditRowDirective, EditControlDirective
+    EditTableDirective,EditRowDirective
 ];
 
 /**

@@ -4,9 +4,7 @@
 //================================================
 import { Injector, ViewChild, forwardRef, OnInit } from '@angular/core';
 import { MessageConfig } from '../config/message-config';
-import { PagerList } from "../core/pager-list";
-import { TreeViewModel, TreeQueryParameter } from "../core/tree-model";
-import { TreeTable } from "../zorro/tree-table-wrapper.component";
+import { util, TreeViewModel, TreeQueryParameter, TreeTable, PagerList } from '../index';
 import { QueryComponentBase } from "./query-component-base";
 
 /**
@@ -51,7 +49,7 @@ export abstract class TreeTableQueryComponentBase<TViewModel extends TreeViewMod
      */
     protected loadCheckedIds() {
         let selection = this.getSelection();
-        this.checkedIds = this.util.helper.getIds( selection );
+        this.checkedIds = util.helper.getIds( selection );
     }
 
     /**
@@ -203,7 +201,7 @@ export abstract class TreeTableQueryComponentBase<TViewModel extends TreeViewMod
     private enableNode( enabled: boolean, node?, btn?, url?: string ) {
         let list = this.getSelectedNodes( node );
         if ( !list || list.length === 0 ) {
-            this.util.message.warn( MessageConfig.notSelected );
+            util.message.warn( MessageConfig.notSelected );
             return;
         }
         url = url || `/api/${this.table.baseUrl}/${enabled ? 'enable' : 'disable'}`;

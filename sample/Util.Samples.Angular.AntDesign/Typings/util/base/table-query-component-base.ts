@@ -3,8 +3,7 @@
 //Licensed under the MIT license
 //================================================
 import { Injector, ViewChild, forwardRef, AfterViewInit } from '@angular/core';
-import { ViewModel, QueryParameter } from "../core/model";
-import { Table } from "../zorro/table-wrapper.component";
+import { ViewModel, QueryParameter, Table } from '../index';
 import { QueryComponentBase } from "./query-component-base";
 
 /**

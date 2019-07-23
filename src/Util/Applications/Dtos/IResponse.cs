@@ -1,7 +1,7 @@
 ﻿namespace Util.Applications.Dtos {
     /// <summary>
-    /// 数据传输对象
+    /// 响应结果
     /// </summary>
-    public interface IDto : IKey, IRequest, IResponse {
+    public interface IResponse {
     }
 }
