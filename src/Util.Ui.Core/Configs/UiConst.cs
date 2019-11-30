@@ -923,5 +923,45 @@
         /// 标签
         /// </summary>
         public const string Tags = "tags";
+        /// <summary>
+        /// 颜色类型
+        /// </summary>
+        public const string ColorType = "color-type";
+        /// <summary>
+        /// 关闭后事件
+        /// </summary>
+        public const string OnAfterClose = "on-after-close";
+        /// <summary>
+        /// 选中变更事件
+        /// </summary>
+        public const string OnCheckedChange = "on-checked-change";
+        /// <summary>
+        /// 按钮样式
+        /// </summary>
+        public const string ButtonStyle = "button-style";
+        /// <summary>
+        /// 表单项浮动
+        /// </summary>
+        public const string FormItemFlex = "form-item-flex";
+        /// <summary>
+        /// 拉
+        /// </summary>
+        public const string Pull = "pull";
+        /// <summary>
+        /// 推
+        /// </summary>
+        public const string Push = "push";
+        /// <summary>
+        /// 列跨度
+        /// </summary>
+        public const string ColumnSpan = "column-span";
+        /// <summary>
+        /// 自动创建列
+        /// </summary>
+        public const string AutoCreateColumn = "auto-create-column";
+        /// <summary>
+        /// 选中行背景色
+        /// </summary>
+        public const string SelectedRowBackgroundColor = "selected-row-background-color";
     }
 }

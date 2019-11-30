@@ -46,7 +46,7 @@ namespace Util.Ui.Zorro.Forms.Renders {
             if( _config.Contains( UiConst.For ) == false )
                 return;
             var expression = _config.GetValue<ModelExpression>( UiConst.For );
-            SelectExpressionResolver.Init( expression, _config );
+            SelectExpressionResolver.Init( expression, _config, IsTableEdit() );
         }
 
         /// <summary>
@@ -78,6 +78,7 @@ namespace Util.Ui.Zorro.Forms.Renders {
         /// 配置Url
         /// </summary>
         private void ConfigUrl( SelectWrapperBuilder builder ) {
+            builder.AddAttribute( "[autoLoad]", _config.GetBoolValue( UiConst.AutoLoad ) );
             builder.AddAttribute( UiConst.Url, _config.GetValue( UiConst.Url ) );
             builder.AddAttribute( "[url]", _config.GetValue( AngularConst.BindUrl ) );
             builder.AddAttribute( "[queryParam]", _config.GetValue( UiConst.QueryParam ) );
